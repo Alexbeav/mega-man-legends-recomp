@@ -1,0 +1,53 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "Mega Man Legends"
+id = "SLES-01485"
+players = 1
+exe = "disc/SLES_014.85"
+disc = ""
+load_address = "0x80010000"
+entry_pc = "0x800123B8"
+text_size = "0x00049000"
+stack_base = "0x801FFFF0"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Mega Man Legends (Europe).bin"
+cue_name = "Mega Man Legends (Europe).cue"
+boot_exe = "SLES_014.85"
+known_sizes = [575828400]
+known_md5 = [
+  "3bf6e581091d361823fb57a5b08845c2",
+]
+known_sha1 = [
+  "b6e260cc6f139b02f3693cab30ca46a98fff3a52",
+]
+known_crc32 = [
+  "43072b59",
+]
+
+[recompiler]
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+window_title = "mega-man-legends- Recompiled"
+memcard_dir = "saves"
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+require_cue = true
+required_tracks = 2
+required_disc_fp = "79b133b1e14ded198b56e6f1411b119ab9bd82c37d26f5dac2f12abf9dfbeb0c"

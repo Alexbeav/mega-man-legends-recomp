@@ -1,0 +1,29 @@
+{
+  "cue_path": "Mega Man Legends (Europe).cue",
+  "cue_name": "Mega Man Legends (Europe).cue",
+  "bin_name": "Mega Man Legends (Europe).bin",
+  "track_count": 2,
+  "data_track_size": 575828400,
+  "data_track_md5": "3bf6e581091d361823fb57a5b08845c2",
+  "data_track_sha1": "b6e260cc6f139b02f3693cab30ca46a98fff3a52",
+  "data_track_crc32": "43072b59",
+  "boot_exe": "SLES_014.85",
+  "serial": "SLES-01485",
+  "serial_exe": "SLES_014.85",
+  "volume_id": "MEGAMAN_LEGENDS",
+  "display_name": "mega-man-legends-",
+  "load_address": "0x80010000",
+  "entry_pc": "0x800123B8",
+  "text_size": "0x00049000",
+  "stack_base": "0x801FFFF0",
+  "require_cue": true,
+  "required_disc_fp": "79b133b1e14ded198b56e6f1411b119ab9bd82c37d26f5dac2f12abf9dfbeb0c",
+  "boot_exe_sha256": "083fc75f1672880513581fdab4d798abf0aab1e049fd25ce35dd113346e99b48",
+  "seed_count": 200,
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
