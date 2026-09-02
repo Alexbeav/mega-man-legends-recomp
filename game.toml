@@ -15,17 +15,20 @@ stack_base = "0x801FFFF0"
 # Digests are for data Track 01 (first BINARY FILE / TRACK 01).
 [prepare_disc]
 out_dir = "disc"
-bin_name = "Mega Man Legends (Europe).bin"
+bin_name = "Mega Man Legends (Europe) (Track 01).bin"
 cue_name = "Mega Man Legends (Europe).cue"
 boot_exe = "SLES_014.85"
-known_sizes = [575828400]
+known_sizes = [538431600, 575828400]
 known_md5 = [
+  "f017409a964b8b3eb598a8f59bd7281f",
   "3bf6e581091d361823fb57a5b08845c2",
 ]
 known_sha1 = [
+  "cf24c99ad6586b1bcba7d67f5dc684864b5e1688",
   "b6e260cc6f139b02f3693cab30ca46a98fff3a52",
 ]
 known_crc32 = [
+  "084bdb3f",
   "43072b59",
 ]
 

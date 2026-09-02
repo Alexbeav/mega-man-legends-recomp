@@ -14,16 +14,17 @@
   },
   "rom_identity": {
     "cue_name": "Mega Man Legends (Europe).cue",
-    "bin_name": "Mega Man Legends (Europe).bin",
+    "bin_name": "Mega Man Legends (Europe) (Track 01).bin",
     "track_counts": [
       2
     ],
     "require_cue": true,
     "data_track": {
-      "size": 575828400,
-      "md5": "3bf6e581091d361823fb57a5b08845c2",
-      "sha1": "b6e260cc6f139b02f3693cab30ca46a98fff3a52",
-      "crc32": "43072b59"
+      "size": 538431600,
+      "md5": "f017409a964b8b3eb598a8f59bd7281f",
+      "sha1": "cf24c99ad6586b1bcba7d67f5dc684864b5e1688",
+      "sha256": "91fc12e8ce4485285ab22fbe39a8c3b5a66cab7d129c69a5c22084adbf361391",
+      "crc32": "084bdb3f"
     },
     "disc_fp": "79b133b1e14ded198b56e6f1411b119ab9bd82c37d26f5dac2f12abf9dfbeb0c"
   },

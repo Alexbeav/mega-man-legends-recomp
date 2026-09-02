@@ -98,7 +98,11 @@ but their release jobs are deferred under the Wave 2 Windows-first exception.
 ## Corrected setup relaunch
 
 Public `v0.3.0` can request the wrong executable after the first local build.
-The `v0.3.3` source uses `Mega_Man_Legends_Recompiled` in CMake, the setup relaunch, and the packager.
+The `v0.3.4` source uses `Mega_Man_Legends_Recompiled` in CMake, the setup relaunch, and the packager.
+
+Release `v0.3.4` accepts the canonical two-file Redump layout. It verifies the
+first data track instead of the old merged whole-disc BIN. The old merged dump
+identity remains accepted for compatibility.
 The source parity gate passes. Exact-ZIP automatic relaunch remains a release gate.
 ## License boundary
 

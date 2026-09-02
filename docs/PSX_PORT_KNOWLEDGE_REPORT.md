@@ -1,9 +1,9 @@
 # Mega Man Legends knowledge report
 
-- Date: 2026-08-31
+- Date: 2026-09-02
 - Retail identity: Europe PAL `SLES-01485`
 - Architecture lane: source-only owned-input setup host
-- Release target: Windows x64, version `0.3.3`
+- Release target: Windows x64, version `0.3.4`
 - License boundary: portfolio files use GPL-3.0-only; dependencies keep their licenses
 
 ## Current state
@@ -38,3 +38,10 @@ PSX-WIN-005, PSX-WIN-006, and PSX-PUB-011.
 The source now uses `Mega_Man_Legends_Recompiled` as the only setup executable name. The batch source
 gate passes. The exact-ZIP automatic-relaunch canary and remote release audit
 remain open. Public `v0.3.0` remains unchanged.
+
+## v0.3.4 disc identity correction
+
+The verifier reads the first BIN referenced by a multi-track CUE. The release
+now lists canonical Track 01 first and retains the merged whole-disc identity
+for compatibility. The exact release package must pass canonical, merged, and
+wrong-disc verification gates before publication.
