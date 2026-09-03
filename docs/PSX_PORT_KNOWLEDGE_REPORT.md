@@ -3,7 +3,7 @@
 - Date: 2026-09-02
 - Retail identity: Europe PAL `SLES-01485`
 - Architecture lane: source-only owned-input setup host
-- Release target: Windows x64, version `0.3.4`
+- Release target: Windows x64, Linux x64, macOS ARM64, and macOS x64; candidate version `0.3.5`
 - License boundary: portfolio files use GPL-3.0-only; dependencies keep their licenses
 
 ## Current state
@@ -14,12 +14,12 @@ locally. Exact-package setup, startup, and remote-byte gates remain open.
 
 ## Release controls
 
-- Framework: afe9ab299aab0eeba1cc31f81bc4baf4e7fb2ab7
+- Framework: f3786825411983a06257865db7bd7538fc68267a
 - recomp-ui: 4eda65430a431e5685ae0c515ebcd912c7843bff
 - RetComM Studio: 249422969c1c59ac2a1f8aa2299e876a7133998e
 - Distribution: owned input only
-- Platform claim: Windows x64 only
-- Deferred work: Linux x64, macOS ARM64, and macOS x64 CI jobs
+- Platform claim: pending exact-package gates on all four targets
+- Deferred work: exact-package native gates and R3/R4 publication
 
 ## Open gates
 
@@ -45,3 +45,10 @@ The verifier reads the first BIN referenced by a multi-track CUE. The release
 now lists canonical Track 01 first and retains the merged whole-disc identity
 for compatibility. The exact release package must pass canonical, merged, and
 wrong-disc verification gates before publication.
+
+## v0.3.5 three-platform refresh
+
+The source now binds the package-only privacy correction and targets Windows
+x64, Linux x64, macOS ARM64, and macOS x64. The replacement build-only CI,
+complete archive audit, and native package gates remain required. This source
+change does not publish a release or claim platform support.
